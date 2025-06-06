@@ -28,155 +28,168 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.menuBox = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.name_i = new System.Windows.Forms.TextBox();
-            this.price_i = new System.Windows.Forms.TextBox();
-            this.price_u = new System.Windows.Forms.TextBox();
-            this.name_u = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.insert = new System.Windows.Forms.Button();
-            this.update = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            menuBox = new ComboBox();
+            label1 = new Label();
+            label2 = new Label();
+            name_i = new TextBox();
+            price_i = new TextBox();
+            price_u = new TextBox();
+            name_u = new TextBox();
+            label3 = new Label();
+            label4 = new Label();
+            label5 = new Label();
+            label6 = new Label();
+            insert = new Button();
+            update = new Button();
+            SuspendLayout();
             // 
             // menuBox
             // 
-            this.menuBox.FormattingEnabled = true;
-            this.menuBox.Location = new System.Drawing.Point(92, 85);
-            this.menuBox.Name = "menuBox";
-            this.menuBox.Size = new System.Drawing.Size(151, 28);
-            this.menuBox.TabIndex = 5;
+            menuBox.FormattingEnabled = true;
+            menuBox.Location = new Point(72, 64);
+            menuBox.Margin = new Padding(2, 2, 2, 2);
+            menuBox.Name = "menuBox";
+            menuBox.Size = new Size(118, 23);
+            menuBox.TabIndex = 5;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 88);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(74, 20);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "메뉴 수정";
+            label1.AutoSize = true;
+            label1.Location = new Point(9, 66);
+            label1.Margin = new Padding(2, 0, 2, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(59, 15);
+            label1.TabIndex = 6;
+            label1.Text = "메뉴 수정";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 28);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(74, 20);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "메뉴 추가";
+            label2.AutoSize = true;
+            label2.Location = new Point(9, 21);
+            label2.Margin = new Padding(2, 0, 2, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(59, 15);
+            label2.TabIndex = 7;
+            label2.Text = "메뉴 추가";
             // 
             // name_i
             // 
-            this.name_i.Location = new System.Drawing.Point(329, 25);
-            this.name_i.Name = "name_i";
-            this.name_i.Size = new System.Drawing.Size(125, 27);
-            this.name_i.TabIndex = 8;
+            name_i.Location = new Point(256, 19);
+            name_i.Margin = new Padding(2, 2, 2, 2);
+            name_i.Name = "name_i";
+            name_i.Size = new Size(98, 23);
+            name_i.TabIndex = 8;
             // 
             // price_i
             // 
-            this.price_i.Location = new System.Drawing.Point(518, 25);
-            this.price_i.Name = "price_i";
-            this.price_i.Size = new System.Drawing.Size(125, 27);
-            this.price_i.TabIndex = 9;
+            price_i.Location = new Point(403, 19);
+            price_i.Margin = new Padding(2, 2, 2, 2);
+            price_i.Name = "price_i";
+            price_i.Size = new Size(98, 23);
+            price_i.TabIndex = 9;
             // 
             // price_u
             // 
-            this.price_u.Location = new System.Drawing.Point(518, 88);
-            this.price_u.Name = "price_u";
-            this.price_u.Size = new System.Drawing.Size(125, 27);
-            this.price_u.TabIndex = 11;
+            price_u.Location = new Point(403, 66);
+            price_u.Margin = new Padding(2, 2, 2, 2);
+            price_u.Name = "price_u";
+            price_u.Size = new Size(98, 23);
+            price_u.TabIndex = 11;
             // 
             // name_u
             // 
-            this.name_u.Location = new System.Drawing.Point(329, 88);
-            this.name_u.Name = "name_u";
-            this.name_u.Size = new System.Drawing.Size(125, 27);
-            this.name_u.TabIndex = 10;
+            name_u.Location = new Point(256, 66);
+            name_u.Margin = new Padding(2, 2, 2, 2);
+            name_u.Name = "name_u";
+            name_u.Size = new Size(98, 23);
+            name_u.TabIndex = 10;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(269, 25);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(54, 20);
-            this.label3.TabIndex = 12;
-            this.label3.Text = "품목명";
+            label3.AutoSize = true;
+            label3.Location = new Point(209, 19);
+            label3.Margin = new Padding(2, 0, 2, 0);
+            label3.Name = "label3";
+            label3.Size = new Size(43, 15);
+            label3.TabIndex = 12;
+            label3.Text = "품목명";
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(269, 93);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(54, 20);
-            this.label4.TabIndex = 13;
-            this.label4.Text = "품목명";
+            label4.AutoSize = true;
+            label4.Location = new Point(209, 70);
+            label4.Margin = new Padding(2, 0, 2, 0);
+            label4.Name = "label4";
+            label4.Size = new Size(43, 15);
+            label4.TabIndex = 13;
+            label4.Text = "품목명";
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(473, 95);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(39, 20);
-            this.label5.TabIndex = 14;
-            this.label5.Text = "가격";
+            label5.AutoSize = true;
+            label5.Location = new Point(368, 71);
+            label5.Margin = new Padding(2, 0, 2, 0);
+            label5.Name = "label5";
+            label5.Size = new Size(31, 15);
+            label5.TabIndex = 14;
+            label5.Text = "가격";
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(473, 32);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(39, 20);
-            this.label6.TabIndex = 15;
-            this.label6.Text = "가격";
+            label6.AutoSize = true;
+            label6.Location = new Point(368, 24);
+            label6.Margin = new Padding(2, 0, 2, 0);
+            label6.Name = "label6";
+            label6.Size = new Size(31, 15);
+            label6.TabIndex = 15;
+            label6.Text = "가격";
             // 
             // insert
             // 
-            this.insert.Location = new System.Drawing.Point(660, 24);
-            this.insert.Name = "insert";
-            this.insert.Size = new System.Drawing.Size(94, 29);
-            this.insert.TabIndex = 16;
-            this.insert.Text = "확인";
-            this.insert.UseVisualStyleBackColor = true;
-            this.insert.Click += new System.EventHandler(this.insert_Click);
+            insert.Location = new Point(513, 18);
+            insert.Margin = new Padding(2, 2, 2, 2);
+            insert.Name = "insert";
+            insert.Size = new Size(73, 22);
+            insert.TabIndex = 16;
+            insert.Text = "확인";
+            insert.UseVisualStyleBackColor = true;
+            insert.Click += insert_Click;
             // 
             // update
             // 
-            this.update.Location = new System.Drawing.Point(660, 88);
-            this.update.Name = "update";
-            this.update.Size = new System.Drawing.Size(94, 29);
-            this.update.TabIndex = 17;
-            this.update.Text = "확인";
-            this.update.UseVisualStyleBackColor = true;
-            this.update.Click += new System.EventHandler(this.update_Click);
+            update.Location = new Point(513, 66);
+            update.Margin = new Padding(2, 2, 2, 2);
+            update.Name = "update";
+            update.Size = new Size(73, 22);
+            update.TabIndex = 17;
+            update.Text = "확인";
+            update.UseVisualStyleBackColor = true;
+            update.Click += update_Click;
             // 
-            // Form4
+            // MenuManageForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(777, 145);
-            this.Controls.Add(this.update);
-            this.Controls.Add(this.insert);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.price_u);
-            this.Controls.Add(this.name_u);
-            this.Controls.Add(this.price_i);
-            this.Controls.Add(this.name_i);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.menuBox);
-            this.Name = "Form4";
-            this.Text = "Form4";
-            this.Load += new System.EventHandler(this.Form4_Load);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(604, 109);
+            Controls.Add(update);
+            Controls.Add(insert);
+            Controls.Add(label6);
+            Controls.Add(label5);
+            Controls.Add(label4);
+            Controls.Add(label3);
+            Controls.Add(price_u);
+            Controls.Add(name_u);
+            Controls.Add(price_i);
+            Controls.Add(name_i);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Controls.Add(menuBox);
+            Margin = new Padding(2, 2, 2, 2);
+            Name = "MenuManageForm";
+            Text = "메뉴 매니지먼트";
+            Load += Form4_Load;
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

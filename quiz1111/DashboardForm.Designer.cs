@@ -28,270 +28,272 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.로그아웃ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.관리자기능ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.유저로그확인ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.커피판매품목관리ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.통계자료ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.사용자별일일판매액ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.사용자별일일판매량ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.수정내역조회ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.주문검ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuBox = new System.Windows.Forms.ComboBox();
-            this.pos = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.adminView = new System.Windows.Forms.DataGridView();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.count = new System.Windows.Forms.TextBox();
-            this.add = new System.Windows.Forms.Button();
-            this.orders = new System.Windows.Forms.ListBox();
-            this.delete = new System.Windows.Forms.Button();
-            this.ordersCount = new System.Windows.Forms.ListBox();
-            this.패스워드변경ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.adminView)).BeginInit();
-            this.SuspendLayout();
+            dateTimePicker2 = new DateTimePicker();
+            menuStrip1 = new MenuStrip();
+            로그아웃ToolStripMenuItem = new ToolStripMenuItem();
+            관리자기능ToolStripMenuItem = new ToolStripMenuItem();
+            유저로그확인ToolStripMenuItem = new ToolStripMenuItem();
+            커피판매품목관리ToolStripMenuItem = new ToolStripMenuItem();
+            통계자료ToolStripMenuItem = new ToolStripMenuItem();
+            사용자별일일판매액ToolStripMenuItem = new ToolStripMenuItem();
+            사용자별일일판매량ToolStripMenuItem = new ToolStripMenuItem();
+            toolStripMenuItem1 = new ToolStripMenuItem();
+            수정내역조회ToolStripMenuItem = new ToolStripMenuItem();
+            주문검ToolStripMenuItem = new ToolStripMenuItem();
+            패스워드변경ToolStripMenuItem = new ToolStripMenuItem();
+            menuBox = new ComboBox();
+            pos = new Button();
+            label1 = new Label();
+            adminView = new DataGridView();
+            label2 = new Label();
+            label3 = new Label();
+            count = new TextBox();
+            add = new Button();
+            orders = new ListBox();
+            delete = new Button();
+            ordersCount = new ListBox();
+            menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)adminView).BeginInit();
+            SuspendLayout();
             // 
             // dateTimePicker2
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(12, 34);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(250, 27);
-            this.dateTimePicker2.TabIndex = 3;
-            this.dateTimePicker2.ValueChanged += new System.EventHandler(this.dateTimePicker2_ValueChanged);
+            dateTimePicker2.Location = new Point(9, 26);
+            dateTimePicker2.Margin = new Padding(2, 2, 2, 2);
+            dateTimePicker2.Name = "dateTimePicker2";
+            dateTimePicker2.Size = new Size(195, 23);
+            dateTimePicker2.TabIndex = 3;
+            dateTimePicker2.ValueChanged += dateTimePicker2_ValueChanged;
             // 
             // menuStrip1
             // 
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.로그아웃ToolStripMenuItem,
-            this.관리자기능ToolStripMenuItem,
-            this.주문검ToolStripMenuItem,
-            this.패스워드변경ToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(618, 28);
-            this.menuStrip1.TabIndex = 2;
-            this.menuStrip1.Text = "menuStrip1";
+            menuStrip1.ImageScalingSize = new Size(20, 20);
+            menuStrip1.Items.AddRange(new ToolStripItem[] { 로그아웃ToolStripMenuItem, 관리자기능ToolStripMenuItem, 주문검ToolStripMenuItem, 패스워드변경ToolStripMenuItem });
+            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Padding = new Padding(5, 2, 0, 2);
+            menuStrip1.Size = new Size(481, 24);
+            menuStrip1.TabIndex = 2;
+            menuStrip1.Text = "menuStrip1";
             // 
             // 로그아웃ToolStripMenuItem
             // 
-            this.로그아웃ToolStripMenuItem.Name = "로그아웃ToolStripMenuItem";
-            this.로그아웃ToolStripMenuItem.Size = new System.Drawing.Size(83, 24);
-            this.로그아웃ToolStripMenuItem.Text = "로그아웃";
-            this.로그아웃ToolStripMenuItem.Click += new System.EventHandler(this.로그아웃ToolStripMenuItem_Click);
+            로그아웃ToolStripMenuItem.Name = "로그아웃ToolStripMenuItem";
+            로그아웃ToolStripMenuItem.Size = new Size(67, 20);
+            로그아웃ToolStripMenuItem.Text = "로그아웃";
+            로그아웃ToolStripMenuItem.Click += 로그아웃ToolStripMenuItem_Click;
             // 
             // 관리자기능ToolStripMenuItem
             // 
-            this.관리자기능ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.유저로그확인ToolStripMenuItem,
-            this.커피판매품목관리ToolStripMenuItem,
-            this.통계자료ToolStripMenuItem,
-            this.수정내역조회ToolStripMenuItem});
-            this.관리자기능ToolStripMenuItem.Name = "관리자기능ToolStripMenuItem";
-            this.관리자기능ToolStripMenuItem.Size = new System.Drawing.Size(103, 24);
-            this.관리자기능ToolStripMenuItem.Text = "관리자 기능";
+            관리자기능ToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { 유저로그확인ToolStripMenuItem, 커피판매품목관리ToolStripMenuItem, 통계자료ToolStripMenuItem, 수정내역조회ToolStripMenuItem });
+            관리자기능ToolStripMenuItem.Name = "관리자기능ToolStripMenuItem";
+            관리자기능ToolStripMenuItem.Size = new Size(83, 20);
+            관리자기능ToolStripMenuItem.Text = "관리자 기능";
             // 
             // 유저로그확인ToolStripMenuItem
             // 
-            this.유저로그확인ToolStripMenuItem.Name = "유저로그확인ToolStripMenuItem";
-            this.유저로그확인ToolStripMenuItem.Size = new System.Drawing.Size(227, 26);
-            this.유저로그확인ToolStripMenuItem.Text = "유저 로그 확인";
-            this.유저로그확인ToolStripMenuItem.Click += new System.EventHandler(this.유저로그확인ToolStripMenuItem_Click);
+            유저로그확인ToolStripMenuItem.Name = "유저로그확인ToolStripMenuItem";
+            유저로그확인ToolStripMenuItem.Size = new Size(182, 22);
+            유저로그확인ToolStripMenuItem.Text = "유저 로그 확인";
+            유저로그확인ToolStripMenuItem.Click += 유저로그확인ToolStripMenuItem_Click;
             // 
             // 커피판매품목관리ToolStripMenuItem
             // 
-            this.커피판매품목관리ToolStripMenuItem.Name = "커피판매품목관리ToolStripMenuItem";
-            this.커피판매품목관리ToolStripMenuItem.Size = new System.Drawing.Size(227, 26);
-            this.커피판매품목관리ToolStripMenuItem.Text = "커피 판매 품목 관리";
-            this.커피판매품목관리ToolStripMenuItem.Click += new System.EventHandler(this.커피판매품목관리ToolStripMenuItem_Click);
+            커피판매품목관리ToolStripMenuItem.Name = "커피판매품목관리ToolStripMenuItem";
+            커피판매품목관리ToolStripMenuItem.Size = new Size(182, 22);
+            커피판매품목관리ToolStripMenuItem.Text = "커피 판매 품목 관리";
+            커피판매품목관리ToolStripMenuItem.Click += 커피판매품목관리ToolStripMenuItem_Click;
             // 
             // 통계자료ToolStripMenuItem
             // 
-            this.통계자료ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.사용자별일일판매액ToolStripMenuItem,
-            this.사용자별일일판매량ToolStripMenuItem,
-            this.toolStripMenuItem1});
-            this.통계자료ToolStripMenuItem.Name = "통계자료ToolStripMenuItem";
-            this.통계자료ToolStripMenuItem.Size = new System.Drawing.Size(227, 26);
-            this.통계자료ToolStripMenuItem.Text = "통계자료";
+            통계자료ToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { 사용자별일일판매액ToolStripMenuItem, 사용자별일일판매량ToolStripMenuItem, toolStripMenuItem1 });
+            통계자료ToolStripMenuItem.Name = "통계자료ToolStripMenuItem";
+            통계자료ToolStripMenuItem.Size = new Size(182, 22);
+            통계자료ToolStripMenuItem.Text = "통계자료";
             // 
             // 사용자별일일판매액ToolStripMenuItem
             // 
-            this.사용자별일일판매액ToolStripMenuItem.Name = "사용자별일일판매액ToolStripMenuItem";
-            this.사용자별일일판매액ToolStripMenuItem.Size = new System.Drawing.Size(338, 26);
-            this.사용자별일일판매액ToolStripMenuItem.Text = "사용자별 일일 판매액/판매량";
-            this.사용자별일일판매액ToolStripMenuItem.Click += new System.EventHandler(this.사용자별일일판매액ToolStripMenuItem_Click);
+            사용자별일일판매액ToolStripMenuItem.Name = "사용자별일일판매액ToolStripMenuItem";
+            사용자별일일판매액ToolStripMenuItem.Size = new Size(271, 22);
+            사용자별일일판매액ToolStripMenuItem.Text = "사용자별 일일 판매액/판매량";
+            사용자별일일판매액ToolStripMenuItem.Click += 사용자별일일판매액ToolStripMenuItem_Click;
             // 
             // 사용자별일일판매량ToolStripMenuItem
             // 
-            this.사용자별일일판매량ToolStripMenuItem.Name = "사용자별일일판매량ToolStripMenuItem";
-            this.사용자별일일판매량ToolStripMenuItem.Size = new System.Drawing.Size(338, 26);
-            this.사용자별일일판매량ToolStripMenuItem.Text = "커피종류별 일일 판매액/판매량";
-            this.사용자별일일판매량ToolStripMenuItem.Click += new System.EventHandler(this.사용자별일일판매량ToolStripMenuItem_Click);
+            사용자별일일판매량ToolStripMenuItem.Name = "사용자별일일판매량ToolStripMenuItem";
+            사용자별일일판매량ToolStripMenuItem.Size = new Size(271, 22);
+            사용자별일일판매량ToolStripMenuItem.Text = "커피종류별 일일 판매액/판매량";
+            사용자별일일판매량ToolStripMenuItem.Click += 사용자별일일판매량ToolStripMenuItem_Click;
             // 
             // toolStripMenuItem1
             // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(338, 26);
-            this.toolStripMenuItem1.Text = "커피종류별 월별 누적 판매액/판매량";
-            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
+            toolStripMenuItem1.Name = "toolStripMenuItem1";
+            toolStripMenuItem1.Size = new Size(271, 22);
+            toolStripMenuItem1.Text = "커피종류별 월별 누적 판매액/판매량";
+            toolStripMenuItem1.Click += toolStripMenuItem1_Click;
             // 
             // 수정내역조회ToolStripMenuItem
             // 
-            this.수정내역조회ToolStripMenuItem.Name = "수정내역조회ToolStripMenuItem";
-            this.수정내역조회ToolStripMenuItem.Size = new System.Drawing.Size(227, 26);
-            this.수정내역조회ToolStripMenuItem.Text = "수정내역 조회";
-            this.수정내역조회ToolStripMenuItem.Click += new System.EventHandler(this.수정내역조회ToolStripMenuItem_Click);
+            수정내역조회ToolStripMenuItem.Name = "수정내역조회ToolStripMenuItem";
+            수정내역조회ToolStripMenuItem.Size = new Size(182, 22);
+            수정내역조회ToolStripMenuItem.Text = "수정내역 조회";
+            수정내역조회ToolStripMenuItem.Click += 수정내역조회ToolStripMenuItem_Click;
             // 
             // 주문검ToolStripMenuItem
             // 
-            this.주문검ToolStripMenuItem.Name = "주문검ToolStripMenuItem";
-            this.주문검ToolStripMenuItem.Size = new System.Drawing.Size(138, 24);
-            this.주문검ToolStripMenuItem.Text = "시간별 주문 검색";
-            this.주문검ToolStripMenuItem.Click += new System.EventHandler(this.주문검ToolStripMenuItem_Click);
-            // 
-            // menuBox
-            // 
-            this.menuBox.FormattingEnabled = true;
-            this.menuBox.Location = new System.Drawing.Point(58, 67);
-            this.menuBox.Name = "menuBox";
-            this.menuBox.Size = new System.Drawing.Size(151, 28);
-            this.menuBox.TabIndex = 4;
-            this.menuBox.SelectedIndexChanged += new System.EventHandler(this.menuBox_SelectedIndexChanged);
-            // 
-            // pos
-            // 
-            this.pos.Location = new System.Drawing.Point(524, 64);
-            this.pos.Name = "pos";
-            this.pos.Size = new System.Drawing.Size(79, 31);
-            this.pos.TabIndex = 5;
-            this.pos.Text = "주문";
-            this.pos.UseVisualStyleBackColor = true;
-            this.pos.Click += new System.EventHandler(this.pos_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 71);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(39, 20);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "메뉴";
-            // 
-            // adminView
-            // 
-            this.adminView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.adminView.Location = new System.Drawing.Point(12, 275);
-            this.adminView.Name = "adminView";
-            this.adminView.RowHeadersWidth = 51;
-            this.adminView.RowTemplate.Height = 29;
-            this.adminView.Size = new System.Drawing.Size(591, 159);
-            this.adminView.TabIndex = 7;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(13, 252);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(119, 20);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "관리자용 그리드";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(223, 70);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(39, 20);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "수량";
-            // 
-            // count
-            // 
-            this.count.Location = new System.Drawing.Point(268, 67);
-            this.count.Name = "count";
-            this.count.Size = new System.Drawing.Size(51, 27);
-            this.count.TabIndex = 10;
-            // 
-            // add
-            // 
-            this.add.Location = new System.Drawing.Point(325, 64);
-            this.add.Name = "add";
-            this.add.Size = new System.Drawing.Size(94, 32);
-            this.add.TabIndex = 11;
-            this.add.Text = "추가";
-            this.add.UseVisualStyleBackColor = true;
-            this.add.Click += new System.EventHandler(this.add_Click);
-            // 
-            // orders
-            // 
-            this.orders.FormattingEnabled = true;
-            this.orders.ItemHeight = 20;
-            this.orders.Location = new System.Drawing.Point(58, 105);
-            this.orders.Name = "orders";
-            this.orders.Size = new System.Drawing.Size(151, 124);
-            this.orders.TabIndex = 12;
-            this.orders.Click += new System.EventHandler(this.orders_Click);
-            // 
-            // delete
-            // 
-            this.delete.Location = new System.Drawing.Point(425, 64);
-            this.delete.Name = "delete";
-            this.delete.Size = new System.Drawing.Size(94, 32);
-            this.delete.TabIndex = 13;
-            this.delete.Text = "삭제";
-            this.delete.UseVisualStyleBackColor = true;
-            this.delete.Click += new System.EventHandler(this.delete_Click);
-            // 
-            // ordersCount
-            // 
-            this.ordersCount.FormattingEnabled = true;
-            this.ordersCount.ItemHeight = 20;
-            this.ordersCount.Location = new System.Drawing.Point(268, 105);
-            this.ordersCount.Name = "ordersCount";
-            this.ordersCount.Size = new System.Drawing.Size(51, 124);
-            this.ordersCount.TabIndex = 14;
-            this.ordersCount.Click += new System.EventHandler(this.ordersCount_Click);
+            주문검ToolStripMenuItem.Name = "주문검ToolStripMenuItem";
+            주문검ToolStripMenuItem.Size = new Size(111, 20);
+            주문검ToolStripMenuItem.Text = "시간별 주문 검색";
+            주문검ToolStripMenuItem.Click += 주문검ToolStripMenuItem_Click;
             // 
             // 패스워드변경ToolStripMenuItem
             // 
-            this.패스워드변경ToolStripMenuItem.Name = "패스워드변경ToolStripMenuItem";
-            this.패스워드변경ToolStripMenuItem.Size = new System.Drawing.Size(118, 24);
-            this.패스워드변경ToolStripMenuItem.Text = "패스워드 변경";
-            this.패스워드변경ToolStripMenuItem.Click += new System.EventHandler(this.패스워드변경ToolStripMenuItem_Click);
+            패스워드변경ToolStripMenuItem.Name = "패스워드변경ToolStripMenuItem";
+            패스워드변경ToolStripMenuItem.Size = new Size(95, 20);
+            패스워드변경ToolStripMenuItem.Text = "패스워드 변경";
+            패스워드변경ToolStripMenuItem.Click += 패스워드변경ToolStripMenuItem_Click;
             // 
-            // Form3
+            // menuBox
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(618, 446);
-            this.Controls.Add(this.ordersCount);
-            this.Controls.Add(this.delete);
-            this.Controls.Add(this.orders);
-            this.Controls.Add(this.add);
-            this.Controls.Add(this.count);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.adminView);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.pos);
-            this.Controls.Add(this.menuBox);
-            this.Controls.Add(this.dateTimePicker2);
-            this.Controls.Add(this.menuStrip1);
-            this.Name = "Form3";
-            this.Text = "Form3";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form3_FormClosing);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.adminView)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            menuBox.FormattingEnabled = true;
+            menuBox.Location = new Point(45, 50);
+            menuBox.Margin = new Padding(2, 2, 2, 2);
+            menuBox.Name = "menuBox";
+            menuBox.Size = new Size(118, 23);
+            menuBox.TabIndex = 4;
+            menuBox.SelectedIndexChanged += menuBox_SelectedIndexChanged;
+            // 
+            // pos
+            // 
+            pos.Location = new Point(408, 48);
+            pos.Margin = new Padding(2, 2, 2, 2);
+            pos.Name = "pos";
+            pos.Size = new Size(61, 23);
+            pos.TabIndex = 5;
+            pos.Text = "주문";
+            pos.UseVisualStyleBackColor = true;
+            pos.Click += pos_Click;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(10, 53);
+            label1.Margin = new Padding(2, 0, 2, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(31, 15);
+            label1.TabIndex = 6;
+            label1.Text = "메뉴";
+            // 
+            // adminView
+            // 
+            adminView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            adminView.Location = new Point(9, 206);
+            adminView.Margin = new Padding(2, 2, 2, 2);
+            adminView.Name = "adminView";
+            adminView.RowHeadersWidth = 51;
+            adminView.RowTemplate.Height = 29;
+            adminView.Size = new Size(460, 119);
+            adminView.TabIndex = 7;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(10, 189);
+            label2.Margin = new Padding(2, 0, 2, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(95, 15);
+            label2.TabIndex = 8;
+            label2.Text = "관리자용 그리드";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(173, 52);
+            label3.Margin = new Padding(2, 0, 2, 0);
+            label3.Name = "label3";
+            label3.Size = new Size(31, 15);
+            label3.TabIndex = 9;
+            label3.Text = "수량";
+            // 
+            // count
+            // 
+            count.Location = new Point(208, 50);
+            count.Margin = new Padding(2, 2, 2, 2);
+            count.Name = "count";
+            count.Size = new Size(41, 23);
+            count.TabIndex = 10;
+            // 
+            // add
+            // 
+            add.Location = new Point(253, 48);
+            add.Margin = new Padding(2, 2, 2, 2);
+            add.Name = "add";
+            add.Size = new Size(73, 24);
+            add.TabIndex = 11;
+            add.Text = "추가";
+            add.UseVisualStyleBackColor = true;
+            add.Click += add_Click;
+            // 
+            // orders
+            // 
+            orders.FormattingEnabled = true;
+            orders.ItemHeight = 15;
+            orders.Location = new Point(45, 79);
+            orders.Margin = new Padding(2, 2, 2, 2);
+            orders.Name = "orders";
+            orders.Size = new Size(118, 94);
+            orders.TabIndex = 12;
+            orders.Click += orders_Click;
+            // 
+            // delete
+            // 
+            delete.Location = new Point(331, 48);
+            delete.Margin = new Padding(2, 2, 2, 2);
+            delete.Name = "delete";
+            delete.Size = new Size(73, 24);
+            delete.TabIndex = 13;
+            delete.Text = "삭제";
+            delete.UseVisualStyleBackColor = true;
+            delete.Click += delete_Click;
+            // 
+            // ordersCount
+            // 
+            ordersCount.FormattingEnabled = true;
+            ordersCount.ItemHeight = 15;
+            ordersCount.Location = new Point(208, 79);
+            ordersCount.Margin = new Padding(2, 2, 2, 2);
+            ordersCount.Name = "ordersCount";
+            ordersCount.Size = new Size(41, 94);
+            ordersCount.TabIndex = 14;
+            ordersCount.Click += ordersCount_Click;
+            // 
+            // DashboardForm
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(481, 334);
+            Controls.Add(ordersCount);
+            Controls.Add(delete);
+            Controls.Add(orders);
+            Controls.Add(add);
+            Controls.Add(count);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(adminView);
+            Controls.Add(label1);
+            Controls.Add(pos);
+            Controls.Add(menuBox);
+            Controls.Add(dateTimePicker2);
+            Controls.Add(menuStrip1);
+            Margin = new Padding(2, 2, 2, 2);
+            Name = "DashboardForm";
+            Text = "대시보드";
+            FormClosing += Form3_FormClosing;
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)adminView).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

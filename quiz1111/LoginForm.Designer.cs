@@ -28,73 +28,78 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.login = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.idBox = new System.Windows.Forms.TextBox();
-            this.pwBox = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.SuspendLayout();
+            login = new Button();
+            label1 = new Label();
+            idBox = new TextBox();
+            pwBox = new TextBox();
+            label2 = new Label();
+            SuspendLayout();
             // 
             // login
             // 
-            this.login.Location = new System.Drawing.Point(161, 220);
-            this.login.Name = "login";
-            this.login.Size = new System.Drawing.Size(94, 29);
-            this.login.TabIndex = 0;
-            this.login.Text = "로그인";
-            this.login.UseVisualStyleBackColor = true;
-            this.login.Click += new System.EventHandler(this.login_Click);
+            login.Location = new Point(125, 165);
+            login.Margin = new Padding(2, 2, 2, 2);
+            login.Name = "login";
+            login.Size = new Size(73, 22);
+            login.TabIndex = 0;
+            login.Text = "로그인";
+            login.UseVisualStyleBackColor = true;
+            login.Click += login_Click;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(89, 127);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(54, 20);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "아이디";
+            label1.AutoSize = true;
+            label1.Location = new Point(69, 95);
+            label1.Margin = new Padding(2, 0, 2, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(43, 15);
+            label1.TabIndex = 1;
+            label1.Text = "아이디";
             // 
             // idBox
             // 
-            this.idBox.Location = new System.Drawing.Point(145, 124);
-            this.idBox.Name = "idBox";
-            this.idBox.Size = new System.Drawing.Size(125, 27);
-            this.idBox.TabIndex = 2;
+            idBox.Location = new Point(113, 93);
+            idBox.Margin = new Padding(2, 2, 2, 2);
+            idBox.Name = "idBox";
+            idBox.Size = new Size(98, 23);
+            idBox.TabIndex = 2;
             // 
             // pwBox
             // 
-            this.pwBox.Location = new System.Drawing.Point(145, 168);
-            this.pwBox.Name = "pwBox";
-            this.pwBox.Size = new System.Drawing.Size(125, 27);
-            this.pwBox.TabIndex = 3;
+            pwBox.Location = new Point(113, 126);
+            pwBox.Margin = new Padding(2, 2, 2, 2);
+            pwBox.Name = "pwBox";
+            pwBox.Size = new Size(98, 23);
+            pwBox.TabIndex = 3;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(70, 171);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 20);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "비밀번호";
+            label2.AutoSize = true;
+            label2.Location = new Point(54, 128);
+            label2.Margin = new Padding(2, 0, 2, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(55, 15);
+            label2.TabIndex = 4;
+            label2.Text = "비밀번호";
             // 
-            // Form2
+            // LoginForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(397, 386);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.pwBox);
-            this.Controls.Add(this.idBox);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.login);
-            this.Name = "Form2";
-            this.Text = "Form2";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form2_FormClosing);
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form2_FormClosed);
-            this.Load += new System.EventHandler(this.Form2_Load);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(309, 290);
+            Controls.Add(label2);
+            Controls.Add(pwBox);
+            Controls.Add(idBox);
+            Controls.Add(label1);
+            Controls.Add(login);
+            Margin = new Padding(2, 2, 2, 2);
+            Name = "LoginForm";
+            Text = "로그인";
+            FormClosing += Form2_FormClosing;
+            FormClosed += Form2_FormClosed;
+            Load += Form2_Load;
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

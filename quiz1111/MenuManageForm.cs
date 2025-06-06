@@ -82,7 +82,7 @@ namespace quiz1111
                 connection.Close();
             }
 
-            query = "UPDATE s5645120.Drink SET menu = '" + name_u.Text + "', price = " + price_u.Text + " WHERE (idDrink = " + (menuBox.SelectedIndex+1) + ");";
+            query = "UPDATE s5645120.Drink SET menu = '" + name_u.Text + "', price = " + price_u.Text + " WHERE (idDrink = " + (menuBox.SelectedIndex + 1) + ");";
             using (MySqlConnection connection = new MySqlConnection(QueryBuilder.GetInstance().getConn()))
             {
                 connection.Open();

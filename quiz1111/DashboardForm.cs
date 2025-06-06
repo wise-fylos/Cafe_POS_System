@@ -194,15 +194,15 @@ namespace quiz1111
 
         private void pos_Click(object sender, EventArgs e)
         {
-            
+
             Random randomObj = new Random();
             int key = randomObj.Next();
 
             int index = 0;
-            while (index<orders.Items.Count)
+            while (index < orders.Items.Count)
             {
                 int orderCounts = Int32.Parse(ordersCount.Items[index].ToString());
-                for (int i = 0; i<orderCounts; i++)
+                for (int i = 0; i < orderCounts; i++)
                 {
                     setOrder(orders.Items[index].ToString().ToString(), key);
                 }
@@ -267,7 +267,7 @@ namespace quiz1111
 
         private void add_Click(object sender, EventArgs e)
         {
-            if (menuBox.Text==""||count.Text=="") return;
+            if (menuBox.Text == "" || count.Text == "") return;
             orders.Items.Add(menuBox.Text);
             ordersCount.Items.Add(count.Text);
         }

@@ -54,7 +54,7 @@ namespace quiz1111
 
         private void Form2_FormClosed(object sender, FormClosedEventArgs e)
         {
- 
+
         }
 
         private void Form2_FormClosing(object sender, FormClosingEventArgs e)

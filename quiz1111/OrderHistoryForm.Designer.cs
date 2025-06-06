@@ -28,158 +28,170 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.View1 = new System.Windows.Forms.DataGridView();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.timeBox = new System.Windows.Forms.TextBox();
-            this.viewID = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.View2 = new System.Windows.Forms.DataGridView();
-            this.cancelID = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.deleteDrink = new System.Windows.Forms.Button();
-            this.viewOrders = new System.Windows.Forms.Button();
-            this.menuBox = new System.Windows.Forms.ComboBox();
-            this.addDrink = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.View1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.View2)).BeginInit();
-            this.SuspendLayout();
+            View1 = new DataGridView();
+            dateTimePicker1 = new DateTimePicker();
+            timeBox = new TextBox();
+            viewID = new Button();
+            label1 = new Label();
+            View2 = new DataGridView();
+            cancelID = new Button();
+            label2 = new Label();
+            deleteDrink = new Button();
+            viewOrders = new Button();
+            menuBox = new ComboBox();
+            addDrink = new Button();
+            ((System.ComponentModel.ISupportInitialize)View1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)View2).BeginInit();
+            SuspendLayout();
             // 
             // View1
             // 
-            this.View1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.View1.Location = new System.Drawing.Point(12, 79);
-            this.View1.Name = "View1";
-            this.View1.RowHeadersWidth = 51;
-            this.View1.RowTemplate.Height = 29;
-            this.View1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.View1.Size = new System.Drawing.Size(294, 237);
-            this.View1.TabIndex = 0;
+            View1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            View1.Location = new Point(9, 59);
+            View1.Margin = new Padding(2, 2, 2, 2);
+            View1.Name = "View1";
+            View1.RowHeadersWidth = 51;
+            View1.RowTemplate.Height = 29;
+            View1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            View1.Size = new Size(229, 178);
+            View1.TabIndex = 0;
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(12, 12);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(250, 27);
-            this.dateTimePicker1.TabIndex = 1;
+            dateTimePicker1.Location = new Point(9, 9);
+            dateTimePicker1.Margin = new Padding(2, 2, 2, 2);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(195, 23);
+            dateTimePicker1.TabIndex = 1;
             // 
             // timeBox
             // 
-            this.timeBox.Location = new System.Drawing.Point(58, 46);
-            this.timeBox.Name = "timeBox";
-            this.timeBox.Size = new System.Drawing.Size(71, 27);
-            this.timeBox.TabIndex = 2;
+            timeBox.Location = new Point(45, 34);
+            timeBox.Margin = new Padding(2, 2, 2, 2);
+            timeBox.Name = "timeBox";
+            timeBox.Size = new Size(56, 23);
+            timeBox.TabIndex = 2;
             // 
             // viewID
             // 
-            this.viewID.Location = new System.Drawing.Point(12, 322);
-            this.viewID.Name = "viewID";
-            this.viewID.Size = new System.Drawing.Size(94, 29);
-            this.viewID.TabIndex = 3;
-            this.viewID.Text = "주문 조회";
-            this.viewID.UseVisualStyleBackColor = true;
-            this.viewID.Click += new System.EventHandler(this.viewID_Click);
+            viewID.Location = new Point(9, 242);
+            viewID.Margin = new Padding(2, 2, 2, 2);
+            viewID.Name = "viewID";
+            viewID.Size = new Size(73, 22);
+            viewID.TabIndex = 3;
+            viewID.Text = "주문 조회";
+            viewID.UseVisualStyleBackColor = true;
+            viewID.Click += viewID_Click;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 49);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(39, 20);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "시간";
+            label1.AutoSize = true;
+            label1.Location = new Point(10, 37);
+            label1.Margin = new Padding(2, 0, 2, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(31, 15);
+            label1.TabIndex = 4;
+            label1.Text = "시간";
             // 
             // View2
             // 
-            this.View2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.View2.Location = new System.Drawing.Point(330, 79);
-            this.View2.Name = "View2";
-            this.View2.RowHeadersWidth = 51;
-            this.View2.RowTemplate.Height = 29;
-            this.View2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.View2.Size = new System.Drawing.Size(257, 237);
-            this.View2.TabIndex = 5;
+            View2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            View2.Location = new Point(257, 59);
+            View2.Margin = new Padding(2, 2, 2, 2);
+            View2.Name = "View2";
+            View2.RowHeadersWidth = 51;
+            View2.RowTemplate.Height = 29;
+            View2.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            View2.Size = new Size(200, 178);
+            View2.TabIndex = 5;
             // 
             // cancelID
             // 
-            this.cancelID.Location = new System.Drawing.Point(112, 322);
-            this.cancelID.Name = "cancelID";
-            this.cancelID.Size = new System.Drawing.Size(94, 29);
-            this.cancelID.TabIndex = 6;
-            this.cancelID.Text = "주문 취소";
-            this.cancelID.UseVisualStyleBackColor = true;
-            this.cancelID.Click += new System.EventHandler(this.cancelID_Click);
+            cancelID.Location = new Point(87, 242);
+            cancelID.Margin = new Padding(2, 2, 2, 2);
+            cancelID.Name = "cancelID";
+            cancelID.Size = new Size(73, 22);
+            cancelID.TabIndex = 6;
+            cancelID.Text = "주문 취소";
+            cancelID.UseVisualStyleBackColor = true;
+            cancelID.Click += cancelID_Click;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(593, 79);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(39, 20);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "수정";
+            label2.AutoSize = true;
+            label2.Location = new Point(461, 59);
+            label2.Margin = new Padding(2, 0, 2, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(31, 15);
+            label2.TabIndex = 7;
+            label2.Text = "수정";
             // 
             // deleteDrink
             // 
-            this.deleteDrink.Location = new System.Drawing.Point(593, 102);
-            this.deleteDrink.Name = "deleteDrink";
-            this.deleteDrink.Size = new System.Drawing.Size(239, 29);
-            this.deleteDrink.TabIndex = 8;
-            this.deleteDrink.Text = "뷰에서 선택한 음료 삭제";
-            this.deleteDrink.UseVisualStyleBackColor = true;
-            this.deleteDrink.Click += new System.EventHandler(this.deleteDrink_Click);
+            deleteDrink.Location = new Point(461, 76);
+            deleteDrink.Margin = new Padding(2, 2, 2, 2);
+            deleteDrink.Name = "deleteDrink";
+            deleteDrink.Size = new Size(186, 22);
+            deleteDrink.TabIndex = 8;
+            deleteDrink.Text = "뷰에서 선택한 음료 삭제";
+            deleteDrink.UseVisualStyleBackColor = true;
+            deleteDrink.Click += deleteDrink_Click;
             // 
             // viewOrders
             // 
-            this.viewOrders.Location = new System.Drawing.Point(212, 322);
-            this.viewOrders.Name = "viewOrders";
-            this.viewOrders.Size = new System.Drawing.Size(94, 29);
-            this.viewOrders.TabIndex = 9;
-            this.viewOrders.Text = "주문 상세";
-            this.viewOrders.UseVisualStyleBackColor = true;
-            this.viewOrders.Click += new System.EventHandler(this.viewOrders_Click);
+            viewOrders.Location = new Point(165, 242);
+            viewOrders.Margin = new Padding(2, 2, 2, 2);
+            viewOrders.Name = "viewOrders";
+            viewOrders.Size = new Size(73, 22);
+            viewOrders.TabIndex = 9;
+            viewOrders.Text = "주문 상세";
+            viewOrders.UseVisualStyleBackColor = true;
+            viewOrders.Click += viewOrders_Click;
             // 
             // menuBox
             // 
-            this.menuBox.FormattingEnabled = true;
-            this.menuBox.Location = new System.Drawing.Point(593, 137);
-            this.menuBox.Name = "menuBox";
-            this.menuBox.Size = new System.Drawing.Size(141, 28);
-            this.menuBox.TabIndex = 10;
+            menuBox.FormattingEnabled = true;
+            menuBox.Location = new Point(461, 103);
+            menuBox.Margin = new Padding(2, 2, 2, 2);
+            menuBox.Name = "menuBox";
+            menuBox.Size = new Size(111, 23);
+            menuBox.TabIndex = 10;
             // 
             // addDrink
             // 
-            this.addDrink.Location = new System.Drawing.Point(740, 134);
-            this.addDrink.Name = "addDrink";
-            this.addDrink.Size = new System.Drawing.Size(94, 32);
-            this.addDrink.TabIndex = 12;
-            this.addDrink.Text = "추가";
-            this.addDrink.UseVisualStyleBackColor = true;
-            this.addDrink.Click += new System.EventHandler(this.addDrink_Click);
+            addDrink.Location = new Point(576, 100);
+            addDrink.Margin = new Padding(2, 2, 2, 2);
+            addDrink.Name = "addDrink";
+            addDrink.Size = new Size(73, 24);
+            addDrink.TabIndex = 12;
+            addDrink.Text = "추가";
+            addDrink.UseVisualStyleBackColor = true;
+            addDrink.Click += addDrink_Click;
             // 
-            // Form5
+            // OrderHistoryForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(844, 386);
-            this.Controls.Add(this.addDrink);
-            this.Controls.Add(this.menuBox);
-            this.Controls.Add(this.viewOrders);
-            this.Controls.Add(this.deleteDrink);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.cancelID);
-            this.Controls.Add(this.View2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.viewID);
-            this.Controls.Add(this.timeBox);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.View1);
-            this.Name = "Form5";
-            this.Text = "Form5";
-            ((System.ComponentModel.ISupportInitialize)(this.View1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.View2)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(656, 290);
+            Controls.Add(addDrink);
+            Controls.Add(menuBox);
+            Controls.Add(viewOrders);
+            Controls.Add(deleteDrink);
+            Controls.Add(label2);
+            Controls.Add(cancelID);
+            Controls.Add(View2);
+            Controls.Add(label1);
+            Controls.Add(viewID);
+            Controls.Add(timeBox);
+            Controls.Add(dateTimePicker1);
+            Controls.Add(View1);
+            Margin = new Padding(2, 2, 2, 2);
+            Name = "OrderHistoryForm";
+            Text = "주문 기록";
+            ((System.ComponentModel.ISupportInitialize)View1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)View2).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
